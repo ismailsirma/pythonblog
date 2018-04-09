@@ -4,7 +4,7 @@ from django.contrib import admin
 from posts.models import Post
 
 class PostModelAdmin(admin.ModelAdmin):
-    list_display = ["__unicode__","updated","timestamp"] # adds time info to admin panel model page
+    list_display = ["title","__unicode__","updated","timestamp"] # adds time info to admin panel model page
     list_display_links = ["updated"] # add link to info show on admin
     list_editable = ["title"]
     list_filter = ["updated","timestamp"] # add filter
